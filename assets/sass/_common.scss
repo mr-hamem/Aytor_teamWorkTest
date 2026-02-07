@@ -1,0 +1,117 @@
+h1,h2,h3,h4,h5,h6,p,ul,ol,small,span{
+   margin: 0;
+   padding: 0;
+}
+a{
+   text-decoration: none;
+   display: inline-block;
+}
+ul{
+   list-style: none;
+}
+body{
+   font-family: 'Roboto', sans-serif;
+   scroll-behavior: smooth;
+}
+input{
+   outline: none;
+   border: none;
+}
+h1,h2,h3,h4,h5,h6,a,button{
+   font-family: 'Josefin Sans', sans-serif;
+ }
+
+
+//  buttons style
+%buttons_style{
+   color: $common-white;
+   background: $primary-color-1;
+   font-size: 20px;
+   font-weight: 400;
+   padding: 10px 30px;
+   border-radius: 2px;
+   transition: .4s;
+   &:hover{
+      background: $common-white;
+      color: $primary-color-1;
+   }
+
+}
+
+// button 2 styles
+%buttons_style_2{
+   color: $common-white;
+   background: $primary-color-2;
+   font-size: 20px;
+   font-weight: 400;
+   padding: 10px 30px;
+   border-radius: 2px;
+   transition: .4s;
+}
+
+// search button css starts here
+.searchOverlay {
+   height: 100%;
+   width: 100%;
+   display: none;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+ }
+ 
+ /* The content */
+ .searchOverlay-content {
+   position: relative;
+   top: 46%;
+   width: 80%;
+   text-align: center;
+   margin-top: 30px;
+   margin: auto;
+ }
+ 
+ /* Close button */
+ .searchOverlay .closebtn {
+   position: absolute;
+   top: 20px;
+   right: 45px;
+   font-size: 60px;
+   cursor: pointer;
+   color: white;
+ }
+ 
+ .searchOverlay .closebtn:hover {
+   color: #ccc;
+ }
+ 
+ /* Style the search field */
+ .searchOverlay input[type=text] {
+   padding: 15px;
+   font-size: 17px;
+   border: none;
+   float: left;
+   width: 75%;
+   background: white;
+ }
+ 
+ .searchOverlay input[type=text]:hover {
+   background: #f1f1f1;
+ }
+ 
+ /* Style the submit button */
+ .searchOverlay .search_sub_btn {
+   float: left;
+   width: 20%;
+   padding: 15px;
+   background: #ddd;
+   font-size: 17px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .searchOverlay button:hover {
+   background: #bbb;
+ }
+//  search button css ends here

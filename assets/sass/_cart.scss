@@ -1,0 +1,47 @@
+// cart banner css starts here
+#cart_banner{
+    background: url(../img/cart.jpg);
+    height: 385px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    h2{
+        color: $common-white;
+        font-size: 48px;
+        font-weight: 800;
+        margin: 10px 0;
+    }
+    li{
+        color: $common-white;
+        text-align: center;
+    }
+    a{
+        color: $primary-color-2;
+    }
+    &::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.856);
+        top: 0;
+        left: 0;
+        opacity: .8;
+        z-index: -1;
+
+    }
+}
+// cart banner css ends here
+// choose products starts here
+#choose_products_section{
+    .cart_select_div{
+        width: 118px;
+        height: 43px;
+        input{
+            text-align: center;
+        }
+    }
+}
+// choose products ends here

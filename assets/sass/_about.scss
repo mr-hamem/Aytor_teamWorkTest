@@ -1,0 +1,326 @@
+// header css starts here
+#header{
+    .first_header{
+        background: $text-color;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        .div_one{
+            color: $common-white;
+            span{
+                color: $primary-color-2;
+            }
+        }
+        .div_two{
+            .div_two_info{
+                a{
+                    color: $common-white;
+                    margin-right: 10px;
+                    transition: .2s;
+                    &:hover{
+                        color: $primary-color-1;
+                    }
+                }
+                select{
+                    background: $text-color;
+                    color: $common-white;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    border: none;
+                }
+
+            }
+        }
+        .first_header_icon{
+            ul{
+                li{
+                    a{
+                        color: $common-white;
+                        transition: .2s;
+                        margin: 0 10px;
+                        &:hover{
+                            color: $primary-color-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// header css  ends here
+
+// banner css starts here
+#about_banner{
+    background: url(../img/about_banner.jpg);
+    height: 385px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    h2{
+        color: $common-white;
+        font-size: 48px;
+        font-weight: 800;
+        margin: 10px 0;
+    }
+    li{
+        color: $common-white;
+        text-align: center;
+    }
+    a{
+        color: $primary-color-2;
+    }
+    &::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        top: 0;
+        left: 0;
+        opacity: .8;
+        z-index: -1;
+
+    }
+}
+// banner css ends here
+
+// about shop info css starts here
+#about_shop_info{
+    margin: 50px 0;
+    .about_shop_info_img{
+        position: relative;
+        z-index: 1;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border: 20px solid$paragrap-gray;
+            bottom: -20px;
+            animation-name: img_slider;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            z-index: -1;
+        }
+        @keyframes img_slider{
+            0%{
+                left: -100px;
+                border: 15px solid $primary-color-1;
+            }
+            100%{
+                left: 150px;
+                border: 15px solid $dark-bg-color;
+            }
+        }
+    }
+    .second_div{
+        h2{
+            font-weight: 800;
+        }
+        p{
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            margin: 20px 0;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                background: $paragrap-gray;
+                width: 100%;
+                height: 1px;
+                bottom: -20%;
+                left:0px;
+            }
+        }
+        .second_div_info_two{
+            li{
+                margin: 10px 0;
+            }
+            .checked{
+                color: $primary-color-1;
+                margin-right: 5px;
+                font-size: 15px;
+            }
+            .peragrap{
+                font-size: 15px;
+            }
+        }
+        .about_first_btn{
+            @extend %buttons_style;
+        }
+    }
+}
+// about shop info css ends here
+// leadership css starts here
+#leadership{
+    margin: 200px 0;
+    .leadership_slider{
+       border: 1px solid$paragrap-gray;
+    }
+    h2{
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: $text-color;
+        margin-bottom: 20px;
+    }
+    .leadership_slider_info{
+        h5{
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600;
+            line-height: 30px;
+            
+        }
+        p{
+            color: $primary-color-1;
+            font-size: 16px;
+            font-family: $secondary-font;
+            text-align: center;
+            line-height: 28px;
+        }
+        .leadership_social_icons{
+            ul{
+                justify-content: center;
+                li{
+                    a{
+                        padding: 0 5px;
+                        color: $paragrap-txt;
+                        transition: .3s;
+                        &:hover{
+                            color: $primary-color-1;
+                        }
+                }
+            }
+           }
+        }
+    }
+}
+// leadership css ends here
+// about footer css starts here
+#about_footer{
+    position: relative;
+    background: #f1f3f4;
+    .newslatter{
+        padding: 50px 0;
+        h2{
+        font-size: 36px;
+        font-weight: 700;
+        color: $text-color;
+        margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: $paragrap-txt;
+        }
+        .subs_input{
+            width: 405px;
+            height: 45px;
+            padding: 0 10px;
+        }
+        a{
+            color: $common-white;
+            background-color: $primary-color-2;
+            padding: 12px 20px;
+        }
+    }
+    .footer_logo{
+        p{
+            color: $paragrap-txt;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            margin: 18px 0;
+        }
+        ul{
+            li{
+                a{
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    i{
+                        color: $paragrap-txt;
+                        transition: .4s;
+                        font-size: 20px;
+                    }
+                    &:hover i{
+                        color: $primary-color-2;
+                    }
+                }
+            }
+        }
+    }
+    .footer_info{
+        h4{
+            margin: 20px 0;
+            font-size: 24px;
+            position: relative;
+            line-height: 34px;
+            font-weight: 700;
+            color: $text-color;
+            &::after{
+                content: "";
+                position: absolute;
+                background: $primary-color-1;
+                width: 50px;
+                height: 2px;
+                bottom: -5px;
+                left: 0;
+            }
+        }
+        .icon_info{
+            li{
+                margin-bottom: 25px;
+                margin-right: 5px;
+                i{
+                    color: $primary-color-1;
+                }
+            }
+        }
+        .loc_info{
+            color: $text-color;
+            a{
+                color: $paragrap-txt;
+                font-family: $secondary-font;
+            }
+        }
+        .support_menu{
+            a{
+                color: $paragrap-txt;
+                font-family: $secondary-font;
+                margin: 8px 0;
+                transition: .4s;
+                &:hover{
+                    color: $primary-color-1;
+                }
+            }
+        }
+        
+        .input_tag{
+            padding: 10px 32px;
+        }
+        a.subscribe_btn{
+            @extend %buttons_style_2;
+        }
+        
+    }
+    .copyright{
+        padding: 30px 0;
+        border-top: 1px solid $paragrap-gray;
+        .txtAndImg{
+            span{
+                color: $primary-color-2;
+            }
+        }
+    }
+    
+}
+// about footer css ends here

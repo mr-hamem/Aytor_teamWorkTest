@@ -1,0 +1,279 @@
+//1. extra extra large device starts here
+@media (max-width:1400px){
+    
+}
+// extra extra large device ends here
+
+//2. extra large device starts here
+@media (min-width:1200px) and (max-width:1399.98px){
+    
+}
+// extra large device ends here
+
+//3. large device starts here
+@media (min-width:992px) and (max-width:1199.98px){
+    #banners .bannerSliderItem h1 {
+        color: #f1f3f4;
+        font-size: 50px;
+    }
+    #banners .banner_slider_dots {
+        bottom: 231px;
+        left: 50%;
+    }
+    #about_footer .footer_info a.subscribe_btn, #footer .footer_info a.subscribe_btn, #best_div a.second_btn {
+        font-size: 17px;
+        padding: 5px 12px;
+    }
+    #video_section h2 {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    #about_shop_info .second_div .about_first_btn, #video_section a, #banners .bannerSliderItem a.buttons {
+        font-size: 14px;
+        padding: 7px 20px;
+    }
+    #footer .footer_top .social_icons ul li a {
+        font-size: 16px;
+        width: 35px;
+        height: 35px;
+    }
+    #footer .footer_info h4 {
+        margin: 17px 0;
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 500;
+    }
+    #footer .footer_info .support_menu a {   
+        font-size: 15px;
+    }
+    #footer .footer_info .opening_time_table {
+        font-size: 13px;
+        font-weight: 400;
+    }
+    #footer .footer_info .input_tag {
+        padding: 5px 28px;
+    }
+}
+// large device ends here
+
+// medium device starts here
+@media (min-width:768px) and (max-width:991.98px){
+    nav .navbar-nav .nav-link {
+        text-align: center;
+    }
+    #banners .bannerSliderItem {
+        height: 500px;
+    }
+    #banners .bannerSliderItem h1 {
+        font-size: 40px;
+    }
+    #banners .banner_slider_dots {
+        left: 47%;
+        bottom: 100px;
+    }
+    #about_shop_info .second_div .about_first_btn, #video_section a, #banners .bannerSliderItem a.buttons {
+        font-size: 17px;
+        padding: 8px 10px;
+        border-radius: 7px;
+    }
+    #second_banner .second_banner_items {
+        margin: 10px 0;
+    }
+    #second_banner .last_banner_img{
+        img{
+            height: 400px;
+            
+        }
+    }
+    #third_banner .third_banner_info h2 {
+        font-size: 38px;
+    }
+    #third_banner .third_banner_info a {
+        padding: 10px 25px;
+        font-size: 16px;
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    #best_div .best_div_icons ul li a {
+        font-size: 12px;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+    }
+    #best_div .best_div_icons {
+        top: 15px;
+    }
+    #best_div .best_div_container:hover .best_div_icons {
+        right: 8px;
+    }
+    #best_div .best_div_container .best_div_info p {
+        margin: 5px 0;
+    }#deals #deals_slider_div .deals_slider .deals_slider_items a {
+        font-size: 12px;
+        padding: 10px;
+    }
+    #deals #deals_slider_div .deals_slider .deals_slider_items h6 {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    #deals #deals_slider_div .deals_slider .deals_slider_items {
+        margin-right: 20px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    #deals #deals_slider_div .deals_slider .deals_slider_items p.info {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: none;
+    }
+    #deals #deals_slider_div .deals_slider .deals_slider_items p.dollar_info {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #deals .deals_slider_dots {
+        left: 45%;
+    }
+    #video_section h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    #video_section p {
+        font-size: 15px;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 15px;
+    }
+    #about_shop_info .second_div .about_first_btn, #video_section a, #banners .bannerSliderItem a.buttons {
+        font-size: 15px;
+        padding: 8px 10px;
+        border-radius: 7px;
+    }
+    #deals #deals_slider_div .deals_slider .deals_slider_items h2 {
+        font-size: 26px;
+        margin-bottom: 13px;
+    }
+    #footer .footer_info .loc_info {
+        color: #fff;
+        font-size: 15px;
+        line-height: 24px;
+        a{
+            display: block;
+        }
+    }
+}
+#footer .footer_info .input_tag {
+    padding: 11px 0px;
+}
+#about_footer .footer_info a.subscribe_btn, #footer .footer_info a.subscribe_btn, #best_div a.second_btn {
+    font-size: 15px;
+    padding: 11px 9px;
+}
+// medium device ends here
+
+// small device starts here
+@media (min-width:576px) and (max-width:767.98px){
+    nav .navbar-nav .nav-link {
+        text-align: center;
+    }
+    #banners .bannerSliderItem {
+        height: 500px;
+    }
+    #banners .bannerSliderItem h1 {
+        font-size: 44px;
+    }
+    #about_shop_info .second_div .about_first_btn, #video_section a, #banners .bannerSliderItem a.buttons {
+        font-size: 18px;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+    #banners .bannerSliderItem p {
+        margin-bottom: 28px;
+    }
+    #banners .banner_slider_dots {
+        left: 43%;
+        bottom: 35px;
+    }
+    #second_banner .first_img{
+        height: 200px;
+        margin: 18px 0;
+        img{
+            height: 100%;
+            padding:0 10px ;
+        }
+    }
+    #second_banner .last_banner_img{
+        height: 250px;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    #third_banner .third_banner_info h2 {
+        font-size: 40px;
+    }
+    #third_banner .third_banner_info a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    #best_div .best_div_icons ul li a {
+        font-size: 12px;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+    }
+    #best_div .best_div_container:hover .best_div_icons {
+        right: 10px;
+        top: 10px;
+    }
+    #deals{
+        .deals_timer{
+            background: $common-white;
+            border: 1px solid$paragrap-gray;
+            padding: 5px 10px;
+            box-shadow: $box-shadow-1;
+            border-radius: 40px;
+            transform: translateY(50%);
+            .deals_timer_pera{
+                & span{
+                    display: block;
+                }
+            }
+        }
+        .span_css{
+            color: $text-color;
+            font-family: $primary-font;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 20px;
+        }
+        .colone_span_css{
+            color: $primary-color-2;
+            font-size: 25px;
+        }
+        #deals #deals_slider_div .deals_slider .deals_slider_items {
+            padding: 8px 15px;
+        }
+        #deals #deals_slider_div .deals_slider .deals_slider_items h2 {
+            font-size: 25px;
+        }      
+    }
+    #video_section h2 {
+        font-size: 20px;
+        line-height: 35px;
+    } 
+    #deals #deals_slider_div .deals_slider .deals_slider_items {
+        margin-right: 20px;
+        padding: 10px 15px;
+    }
+    
+}
+// small device ends here
+
+// extra small device starts here
+@media (max-width:575.98px){
+
+}
+// extra small device ends here
