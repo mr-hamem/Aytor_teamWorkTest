@@ -1,0 +1,272 @@
+// header css starts here
+#header{
+    .first_header{
+        background: $text-color;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        .div_one{
+            color: $common-white;
+            span{
+                color: $primary-color-2;
+            }
+        }
+        .div_two{
+            .div_two_info{
+                a{
+                    color: $common-white;
+                    margin-right: 10px;
+                    transition: .2s;
+                    &:hover{
+                        color: $primary-color-1;
+                    }
+                }
+                select{
+                    background: $text-color;
+                    color: $common-white;
+                    cursor: pointer;
+                    margin-right: 10px;
+                    border: none;
+                }
+
+            }
+        }
+        .first_header_icon{
+            ul{
+                li{
+                    a{
+                        color: $common-white;
+                        transition: .2s;
+                        margin: 0 10px;
+                        &:hover{
+                            color: $primary-color-2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// header css  ends here
+
+// banner css starts here
+#shop_banner{
+    background: url(../img/shop_grid_banner.jpg);
+    height: 385px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    h2{
+        color: $common-white;
+        font-size: 48px;
+        font-weight: 800;
+        margin: 10px 0;
+    }
+    li{
+        color: $common-white;
+        text-align: center;
+    }
+    a{
+        color: $primary-color-2;
+    }
+    &::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        top: 0;
+        left: 0;
+        opacity: .8;
+        z-index: -1;
+
+    }
+}
+// banner css ends here
+
+// add cart css starts here
+#add_cart{
+    .side_two{
+        h2{
+            font-size: 36px;
+            font-weight: 700;
+            color: $text-color;
+            margin: 25px 0px;
+        }
+        .jackets_container{
+            position: relative;
+            .shop_products_ratings{
+                margin-top: 10px;
+                .points{
+                    padding-right:5px;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                .shop_ratings_icon{
+                    color: $primary-color-1;
+                    font-size: 14px;
+                    border-left: 1px solid$text-color;
+                    padding: 0 15px;
+                }
+                .review_person{
+                    h6{
+                    border-left: 1px solid$text-color;
+                    padding: 0 15px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    }
+                }
+                
+            }
+            .price{
+                ins{
+                    color: $text-color;
+                    font-size: 20px;
+                    font-weight: 600;
+                    font-family: $primary-font;
+                    text-decoration: none;
+                    margin-right: 15px;
+                }
+                del{
+                    color: $paragrap-txt;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            .jacket_description{
+                margin-bottom: 50px;
+                p{
+                    color: $paragrap-txt;
+                    font-size: 16px;
+                    text-align: justify;
+                }
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background: $paragrap-gray;
+                left: 0;
+                bottom: -12%;
+            }
+        }
+        .jackets_footer{
+            .first_label{
+                margin-bottom: 20px;
+                label{
+                    font-size: 18px;
+                    font-family: $primary-font; 
+                    font-weight: 600;
+                    color: $text-color;
+                    line-height: 28px;
+                    margin-right: 25px;
+                }
+                select{
+                    width: 442px;
+                    height: 35px;
+                    padding: 0 20px;
+                }
+            }
+            .second_label{
+                margin-bottom: 20px;
+                label{
+                    font-size: 18px;
+                   font-family: $primary-font; 
+                   font-weight: 600;
+                   color: $text-color;
+                   line-height: 28px;
+                   margin-right: 5px;
+                }
+                select{
+                    width: 442px;
+                    height: 35px;
+                    padding: 0 20px;  
+                }
+            }
+            .quantity{
+                h6{
+                    font-size: 18px;
+                    font-family: $primary-font; 
+                    font-weight: 600;
+                    color: $text-color;
+                    line-height: 28px;
+                    margin-bottom: 15px;
+                }
+                .quantity_selection{
+                    .cart_select_div{
+                        width: 118px;
+                        height: 43px;
+                        input{
+                            text-align: center;
+                        }
+                    }
+                    .addToCartbtn{
+                        a{
+                            color:$common-white;
+                            background: $primary-color-2;
+                            padding: 9px 30px;
+                            margin: 0 20px;
+                            transition: .4s;
+                            &:hover{
+                                color: $primary-color-2;
+                                background: $common-white;
+                            }
+                        }
+                    }
+                    .jackets_socials{
+                        a{
+                            margin: 0 5px;
+                            i{
+                               color: $common-white; 
+                               background: $dark-bg-color;
+                               font-size: 18px;
+                               width: 40px;
+                               height: 40px;
+                               line-height: 40px;
+                               text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+    }
+   
+}
+// add cart css ends here
+
+// customer review css starts here
+#customers_description{
+    .customers_description_menus{
+        justify-content: center;
+        border: none;
+        margin: 20px 0;
+        li{
+            background: $dark-bg-color;
+            button{
+                color: #FFF;
+            }
+            &:active{
+                button{
+                    color: red;
+                }
+            }
+        }
+    }
+    .tab_first_div{
+        .tab_first_div_info{
+            color: $paragrap-txt;
+            padding: 0 10px;
+            line-height: 28px;
+        }
+        .customers_review_section{
+            .comment_name{
+                display: flex;
+            }
+        }
+    }
+}
+// customer review css ends here

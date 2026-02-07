@@ -1,0 +1,646 @@
+// .product_item{
+//     @extend %product_item;
+// }
+nav{
+    .navbar-brand img{
+        width: 100px;
+        display: inline-block;
+    }
+    .navbar-nav{
+        .nav-link{
+            color: $text-color;
+            margin: 0 10px;position: relative;
+            &:hover::after{
+                color: $primary-color-1;
+                opacity: 1;
+                visibility: visible;
+                
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background: $primary-color-1;
+                opacity: 0;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+                transition: .4s;
+            }
+        }
+    }
+    .navbar_icon{
+        ul{
+            li{
+                
+                button{
+                    background: none;
+                    border: none;
+                    margin-right: 10px;
+                    font-size: 18px;
+                    a{
+                        i{
+                            color: black;
+                        }
+                    }
+                    i{
+                        transition: .5s;
+                        
+                    }
+                    &:hover i{
+                        color: $primary-color-1;
+                    }
+                }
+            }
+        }
+}
+}
+
+// banner css starts here
+#banners{
+    .bannerSliderItem{
+        height: 800px;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        z-index: 1;
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(to right, rgba(2, 5, 19, 0.7), rgba(0, 0, 0, 0));
+            inset: 0px;
+            z-index: -1;
+        }
+        h1{
+            color: $bg-color;
+            font-size: 60px;
+        }
+        p{
+            color: $bg-color;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+        h5{
+            color: $bg-color;
+            font-size: 15px;
+            font-family: "Josefin Sans", sans-serif;
+        }
+        a.buttons{
+            @extend %buttons_style;
+        }
+        
+    }
+    .banner_slider_dots{
+
+        position: absolute;
+        bottom: 200px;
+        left: 8%;
+        li{
+            line-height: 0;
+            display: inline-block;
+            button{
+                border: none;
+                font-size: 0px;
+                width: 10px;
+                height: 6px;
+                background: $bg-color;
+                border-radius: 5px;
+                margin-right: 5px;
+                transition: all 0.4s ease 0s;
+               
+            }
+            &.slick-active button{
+                width: 26px;
+                background: $primary-color-1;
+            }
+        }
+    }
+
+}
+// banner css ends here
+
+// second banner css starts
+#second_banner{
+    margin: 30px 0;
+    .second_banner_items{
+        position: relative;
+        .ovarlay{
+            position: absolute;
+            inset: 30px;
+            background: rgba(2, 5, 19, 0.7);
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: .4s;
+            h3{
+                color: $common-white;
+            }
+            a{
+                color: $common-white;
+                
+            }
+        }
+        &:hover .ovarlay{
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+// second banner css ends
+
+// new arrivals items css starts here
+#new_arival_items{
+    margin: 50px 0;
+    h2{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .product_items_slider{
+        border: 1px solid$paragrap-gray;
+        position: relative;
+        overflow: hidden;
+        transition: .4s;
+        &:hover .product_slider_icons{
+            right: 17px;
+        }
+        .product_info{
+            .ratings{
+                color: $primary-color-2;
+                font-size: 10px;
+                margin-top: 5px;
+            }
+            p{
+                margin: 15px 0;
+            }
+            del{
+                color: $paragrap-gray;
+            }
+            ins{
+                text-decoration: none;
+                margin-right: 10px;
+            }
+            h4{
+                a{
+                    font-size: 20px;
+                    color: $text-color;
+                    font-weight: 700;
+                    transition: .4s;
+                    &:hover{
+                        color: $primary-color-2;
+                    }
+                }
+            }
+        }
+    }
+    .product_image{
+        overflow: hidden;
+        img{
+            transition: .4s;
+        }
+        &:hover img{
+            transform: scale(1.1);
+            cursor: pointer;
+            
+        }
+    }
+    .product_slider_icons{
+        position: absolute;
+        top: 37px;
+        right: -40px;
+        transition: .4s;
+        ul{
+            li{
+                a{
+                    font-size: 16px;
+                    color: $dark-bg-color;
+                    background:$light-bg-color;
+                    border-radius: 50%;
+                    width: 36px;
+                    height: 36px;
+                    line-height: 36px;
+                    margin: 5px 0;
+                    text-align: center;
+                    box-shadow: $box-shadow-1;
+                    transition: .4s;
+                    &:hover{
+                        color: $common-white;
+                        background: $primary-color-2;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
+// new arrivals items css ends here
+
+
+// 3rd banner css starts here
+#third_banner{
+    margin-bottom: 40px;
+    .third_banner_info{
+        h2{
+            font-size: 46px;
+            font-weight: 700;
+            margin: 30px 0;
+        }
+        a{
+            padding: 10px 30px;
+            border: 1px solid$light-bg-color;
+            color: $light-bg-color;
+            font-size: 18px;
+            transition: .3s;
+            margin-top: 30px;
+            margin-left: 30px;
+            &:hover{
+                background: $primary-color-2;
+            }
+        }
+    }
+}
+// 3rd banner css ends here
+
+// best div css starts here
+#best_div{
+    margin: 50px 0;
+    h2{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .best_div_container{
+        border: 1px solid$paragrap-gray;
+        position: relative;
+        overflow: hidden;
+        transition: .4s;
+        &:hover .best_div_icons{
+            right: 17px;
+        }
+        .best_div_info{
+            .ratings{
+                color: $primary-color-2;
+                font-size: 10px;
+                margin-top: 5px;
+            }
+            p{
+                margin: 15px 0;
+            }
+            del{
+                color: $paragrap-gray;
+            }
+            ins{
+                text-decoration: none;
+                margin-right: 10px;
+            }
+            h4{
+                a{
+                    font-size: 20px;
+                    color: $text-color;
+                    font-weight: 700;
+                    transition: .4s;
+                    &:hover{
+                        color: $primary-color-2;
+                    }
+                }
+            }
+        }
+    }
+    .best_div_img{
+        overflow: hidden;
+        img{
+            transition: .4s;
+        }
+        &:hover img{
+            transform: scale(1.1);
+            cursor: pointer;
+            
+        }
+    }
+    .best_div_icons{
+        position: absolute;
+        top: 37px;
+        right: -40px;
+        transition: .4s;
+        ul{
+            li{
+                a{
+                    font-size: 16px;
+                    color: $dark-bg-color;
+                    background:$light-bg-color;
+                    border-radius: 50%;
+                    width: 36px;
+                    height: 36px;
+                    line-height: 36px;
+                    margin: 5px 0;
+                    text-align: center;
+                    box-shadow: $box-shadow-1;
+                    transition: .4s;
+                    &:hover{
+                        color: $common-white;
+                        background: $primary-color-2;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+    a.second_btn{
+        @extend %buttons_style_2;
+    }
+}
+// best div css ends here
+
+
+// deals timer css starts
+#deals{
+    .deals_timer{
+        background: $common-white;
+        border: 1px solid$paragrap-gray;
+        padding: 5px 10px;
+        box-shadow: $box-shadow-1;
+        border-radius: 40px;
+        transform: translateY(50%);
+        .deals_timer_pera{
+            & span{
+                display: block;
+            }
+        }
+    }
+    .span_css{
+        color: $text-color;
+        font-family: $primary-font;
+        font-size: 27px;
+        font-weight: 600;
+        margin: 0 20px;
+    }
+    .info_span_css{
+        font-size: 16px;
+        font-family: $primary-font;
+        font-weight: 400;
+        text-align: center;
+    }
+    .colone_span_css{
+        color: $primary-color-2;
+        font-size: 50px;
+    }
+    #deals_slider_div{
+        height: 500px;
+        box-shadow: $box-shadow-3;
+        border-radius: 10px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 40px;
+        .deals_slider{
+            .deals_slider_items{
+                margin-right: 20px;
+                padding: 50px;
+                h6{
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: $primary-font;
+                    line-height: 28px;
+                    margin-bottom: 10px;
+                }
+                h2{
+                    font-size: 36px;
+                    font-weight: 700;
+                    font-family: $primary-font;
+                    margin-bottom: 20px;
+                }
+                p.info{
+                    font-size: 16px;
+                    font-family: $secondary-font;
+                    font-weight: 400;
+                    line-height: 28px;
+
+                }
+                p.dollar_info{
+                    font-family: $primary-font;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: $text-color;
+                    text-decoration: none;
+                    margin: 10px 0;
+                }
+                p ins{
+                    text-decoration: none;
+                }
+                p del{
+                    color: $paragrap-txt;
+                    margin-left: 10px;
+                }
+                a{
+                    color: $common-white;
+                    background: $dark-bg-color;
+                    padding: 10px 20px;
+                    margin: 10px 0;
+                    transition: .4s;
+                    &:hover{
+                        background: $common-white;
+                        color: $dark-bg-color;
+
+                    }
+                }
+                
+            }
+        }
+    }
+    .deals_slider_dots{
+        position: absolute;
+        left: 47%;
+        li{
+            &.slick-active{
+                button{
+                    width: 26px;
+                }
+            }
+            line-height: 0;
+            display: inline-block;
+            button{
+                background: $dark-bg-color;
+                border: none;
+                font-size: 0;
+                width: 10px;
+                height: 6px;
+                border-radius: 5px;
+                margin-right: 5px;
+                transition: .4s;
+            }
+        }
+    }
+}
+// deals slider ends
+
+// video section css starts
+#video_section{
+    position: relative;
+    background: $bg-color;
+    padding: 100px 0;
+    margin: 100px 0;
+    box-shadow: $box-shadow-2;
+    h5{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        color: $paragrap-txt;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 46px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        font-family: $secondary-font;
+        margin-bottom: 25px;
+    }
+    a{
+        @extend %buttons_style;
+    }
+    .video_section_img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+// video section css ends
+// footer css starts
+#footer{
+    background: url(../img/footer_img.jpg);
+    position: relative;
+    z-index: 1;
+    height: auto;
+    .footer_top{
+        justify-content: space-between;
+        padding-top: 100px;
+        position: relative;
+        .social_icons{
+            ul{
+                li{
+                    margin-right: 5px;
+                    a{
+                        font-size: 16px;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        background: $common-white;
+                        color: $paragrap-txt;
+                        transition: .4s;
+                        
+                        
+                    }
+                    &:hover a{
+                        color: $common-white;
+                        background: $primary-color-1;
+                    }
+                }
+            }
+        }
+        .visa_logo{
+            display: flex;
+            justify-content: flex-end;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: white;
+            bottom: -10px;
+            left: 0;
+        }
+    }
+    .footer_info{
+        h4{
+            margin: 20px 0;
+            font-size: 24px;
+            position: relative;
+            line-height: 34px;
+            font-weight: 700;
+            color: $common-white;
+            &::after{
+                content: "";
+                position: absolute;
+                background: $primary-color-1;
+                width: 50px;
+                height: 2px;
+                bottom: -5px;
+                left: 0;
+            }
+        }
+        .icon_info{
+            li{
+                margin-bottom: 25px;
+                margin-right: 5px;
+                i{
+                    color: $primary-color-1;
+                }
+            }
+        }
+        .loc_info{
+            color: $common-white;
+            a{
+                color: $common-white;
+            }
+        }
+        .support_menu{
+            a{
+                color: $common-white;
+                transition: .4s;
+                &:hover{
+                    color: $primary-color-1;
+                }
+            }
+        }
+        .opening_time_table{
+            color: $common-white;
+        }
+        
+        .input_tag{
+            padding: 10px 32px;
+            &::placeholder{
+                font-family: $primary-font;
+                text-align: center;
+            }
+        }
+        a.subscribe_btn{
+            @extend %buttons_style_2;
+        }
+        .news_letter_info{
+            p{
+                color: $common-white;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &::after{
+        content:"";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        top: 0;
+        left: 0;
+        opacity: .8;
+        z-index: -1;
+
+    }
+}
+
+// footer css ends
